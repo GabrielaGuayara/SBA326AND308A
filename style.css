@@ -16,7 +16,7 @@ body{
 
 .row{
     justify-content: space-around;
-    align-content: center;
+    max-width: 100%;
 }
 
 .main-ctn.container-fluid{
@@ -27,8 +27,17 @@ body{
     align-items: center;
     justify-content: space-around;
     place-items: center;
+    padding: 20px;
 }
 
+/* .row.subrows{
+    height: 80%;
+} */
+
+.col-md-10.bg-white.bigCol{
+    height: 100%;
+    background-color: brown;
+}
 footer{
     height: 10%;
 }
