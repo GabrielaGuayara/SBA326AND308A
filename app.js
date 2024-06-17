@@ -12,8 +12,8 @@ const factory = (data) =>{
     data.forEach(element => {
        
         newItem += `
-        <div class="card gallery" style="width: 18rem;">
-            <img class="card-img-top" src="${element.image.url}" alt="Card image cap">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="${element.image.url}" style="height: 40%"alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">${element.name}</h5>
           <p class="card-text">${element.description}</p>
@@ -40,7 +40,11 @@ fetch(url,{headers: {
 }).then(data =>{
   
     factory(data)
-    console.log(data)
+
+    // data.forEach(element => {
+    //     console.log(element.name)
+    // });
+    // console.log(data)
     
 
 }).catch(e=>{
