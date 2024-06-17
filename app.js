@@ -1,19 +1,44 @@
-const factList = document.querySelector(".facts-list")
+const factList = document.querySelector(".list-of-schools")
 
 console.log(factList)
 
-const url = "https://api.thecatapi.com/v1/facts";
-const apiKey = "live_3ptZ6oXj6Gz7au1pT24sFNfqorps6olUzNrQnPOp9Gm1xxIEAFN8ZSdBhMph5EFc"
+let newItem ="";
 
-fetch(url,{
-    headers:{
-        'x-api-key': apiKey
+const url = "https://data.cityofnewyork.us/resource/ydbx-4ufw.json?$limit=10";
+
+const factory = (data) =>{
+    data.forEach(element => {
+       
+        newItem += `
+        <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${element.school_name}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">${element.program}</p>
+        <a href="#" class="card-link">Edit</a>
+        <a href="#" class="card-link">Delete</a>
+      </div>
+        
+        `;
+    })
+        factList.innerHTML = newItem;
     }
-}).then(resp => {
+
+
+fetch(url)
+.then(resp => {
     if(!resp.ok){
         throw new Error('Error loading API')
     }
-    return reportError.json();
+    return resp.json();
 }).then(data =>{
-    console.log(data)
+  
+    factory(data)
+    
+
+}).catch(e=>{
+    console.log(e)
 })
+
+
+const addItem = document.querySelector(".addItemForm")
