@@ -12,12 +12,12 @@ const factory = (data) =>{
     data.forEach(element => {
        
         newItem += `
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${element.image.url}" style="height: 40%"alt="Card image cap">
+        <div class="card m-2" style="width: 18rem;">
+            <img class="card-img-top" src="${element.image.url}" style="height: 40%; weight: 100%"alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">${element.name}</h5>
           <p class="card-text">${element.description}</p>
-          <p class="card-text">${element.temperament}</p>
+          <p class="card-text" style="font-weight: 500">${element.temperament}</p>
         </div>
       </div>
         
@@ -26,7 +26,7 @@ const factory = (data) =>{
         gallery.innerHTML = newItem;
     }
 
-const url = `https://api.thecatapi.com/v1/breeds?limit=10`;
+const url = `https://api.thecatapi.com/v1/breeds?limit=9`;
 const api_key = "live_3ptZ6oXj6Gz7au1pT24sFNfqorps6olUzNrQnPOp9Gm1xxIEAFN8ZSdBhMph5EFc"
     
 fetch(url,{headers: {
