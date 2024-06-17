@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    max-height: 100vh;
+    font-size: 12px;
+    background-color:hsl(210, 46%, 95%);
+}
+.welcomeMessage{
+    background-color: aqua;
+}
