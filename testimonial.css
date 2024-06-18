@@ -2,17 +2,33 @@
 body{
     padding: 0;
     margin: 0;
-    height: 95vh;
+    height: 100%;
     font-size: 12px;
     background-color:hsl(210, 46%, 95%);
     font-family:'Barlow Semi Condensed';
     color:hsl(0, 0%, 100%) ;
+    width: 100%;
 }
 
+.main-ctn{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.navBar{
+    background-color: hsl(216, 33%, 18%);
+    height: 60px;
+}
 .text.quoutes{
     font-weight: 600;
+    font-size: 14px;
     
 }
+
 
 .imagePhoto{
     height: 30px;
@@ -29,25 +45,17 @@ body{
     max-width: 100%;
 }
 
-.main-ctn.container-fluid{
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    place-items: center;
-    padding: 20px;
-}
+
 
 /* .row.subrows{
     height: 80%;
 } */
 
-.col-md-10.bg-white.bigCol{
-    height: 100%;
-    background-color: brown;
-}
+
 footer{
     height: 5%;
 }
 
+.sideBar{
+    color: black;
+}
