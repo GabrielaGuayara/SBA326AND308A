@@ -4,8 +4,27 @@ body{
     height: 100vh;
     max-height: 100vh;
     font-size: 12px;
-    background-color:hsl(210, 46%, 95%);
+    background-color: hsl(219, 29%, 14%);
+    font-size: 16px;
+    color: white;
+
 }
 .welcomeMessage{
-    background-color: aqua;
+    background-image: url(images/bg1.jpg);
+    height: 100%;
+    background-position: top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 30% 20% 30% 20%;
+}
+
+.about p{
+   margin: 3% 20%;
+   text-align: center;
+}
+
+.galleryPhotos{
+    text-align: center; 
+    background-color:hsl(199, 64%, 90%);
+    border-radius: 10% 20% 10% 20%;
 }
