@@ -100,23 +100,8 @@ const factory = (data) =>{
 
 getDateByBreed();
 
-const form = document.getElementById('commentsForm')
 
 
-
-form.addEventListener('submit',(e) => {
-
-    e.preventDefault();
-    let userName = document.getElementById('name').value;
-    let profession = document.getElementById('job').value;
-    let msg = document.getElementById('message').value;
-    let img = document.getElementById('image').files[0]
-    console.log(form)
-    console.log(userName)
-    console.log(profession)
-    // console.log(img)
-
-})
 
 
 
