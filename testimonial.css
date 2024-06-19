@@ -11,14 +11,21 @@ body{
 }
 
 .main-ctn{
-    height: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     place-items: center;
+    padding: 2% 8%;
 }
 
+.links{
+   text-decoration: none;
+   font-size: 14px;
+   margin-left:12px;
+   
+}
 .navBar{
     background-color: hsl(216, 33%, 18%);
     height: 60px;
