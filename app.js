@@ -9,9 +9,10 @@ selector.append(defaulOption)
 let newCat ="";
 
 
+
 // const url = `https://api.thecatapi.com/v1/images/search?limit=10`;
 
-const url = `https://api.thecatapi.com/v1/breeds?limit=5`;
+const url = `https://api.thecatapi.com/v1/breeds?limit=6`;
 const api_key = "live_3ptZ6oXj6Gz7au1pT24sFNfqorps6olUzNrQnPOp9Gm1xxIEAFN8ZSdBhMph5EFc"
     
 async function getDateByBreed(){
@@ -43,7 +44,7 @@ try{
         seeAllCats.innerText = "See All Cats"
         selector.append(seeAllCats)
 
-        selector.addEventListener('change', function() {
+        selector.addEventListener('change', function () {
            
             const selectedBreedId = this.value; // `this` refers to the select element
     
@@ -97,7 +98,27 @@ const factory = (data) =>{
         gallery.innerHTML = newCat;
     }
 
-// getDateByBreed();
+getDateByBreed();
+
+const form = document.getElementById('commentsForm')
+let userName = document.getElementById('name').value;
+let profession = document.getElementById('job').value;
+let msg = document.getElementById('message').value;
+let img = document.getElementById('image')
+
+
+form.addEventListener('submit', function (){
+
+    console.log(form)
+    console.log(userName)
+    console.log(profession)
+    // console.log(img)
+
+})
+
+// function getUserComments(){
+
+// }
 
 
 
