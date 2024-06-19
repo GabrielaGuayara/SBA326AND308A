@@ -8,6 +8,11 @@ body{
     font-family:'Barlow Semi Condensed';
     color:hsl(0, 0%, 100%) ;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .main-ctn{
@@ -24,7 +29,12 @@ body{
    text-decoration: none;
    font-size: 14px;
    margin-left:12px;
+   color: white;
    
+}
+
+.links:hover{
+    color: yellow;
 }
 .navBar{
     background-color: hsl(216, 33%, 18%);
@@ -54,10 +64,6 @@ body{
 
 
 
-/* .row.subrows{
-    height: 80%;
-} */
-
 
 footer{
     height: 5%;
@@ -65,4 +71,11 @@ footer{
 
 .sideBar{
     color: black;
+}
+
+.formSection{
+   color: hsl(216, 33%, 18%);
+   background-color: hsla(263, 55%, 52%, 0.384);
+   font-size: 18px;
+  
 }

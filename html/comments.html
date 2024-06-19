@@ -17,7 +17,7 @@
 
 <body>
   <!-- NavBar -->
-  <div class="d-flex justify-content-around py-3 navBar">
+  <div class="d-flex justify-content-around py-3 navBar w-100">
     <a href="../html/index.html" class="links"><h6><i class="fa-solid fa-cat"></i></span> Welcome to CatAdopt</h6></a>
       <nav class="d-flex align-items-around ">
       <a class="links" href="../html/index.html">Home</a>
@@ -125,9 +125,9 @@
   </section>
 
   <!-- Form section to collect new comments -->
-  <section>
-    <div class="container mt-5 formSection" style="background-color: hsla(263, 55%, 52%, 0.384);" >
-      <h2 class="heading">Share Your Experience with Us </p>
+  <section class="w-75 py-2">
+    <div class="container mt-5 formSection p-4 rounded shadow" >
+      <h2 class="heading">Share Your Experience with Us </h2>
       <p>Once you submit your comment, it will be posted for everyone to see</p>
       <form id="commentsForm" method="post">
         <div class="form-group">
@@ -140,7 +140,7 @@
         </div>
         <div class="form-group">
           <label for="messageInput">Message:</label>
-          <textarea class="form-control" rows="3" id="message"></textarea>
+          <textarea class="form-control" rows="2" id="message"></textarea>
         </div>
         <button type="submit" class="btn btn-primary m-2">Submit</button>
       </form>
@@ -148,9 +148,9 @@
   </section>
 
   <!-- Footer Section -->
-  <footer class="bg-light">
+  <footer class="bg-light w-100">
     <div class="container">
-      <div class="row">
+      <div class="row ">
         <div class="col-md-6 text-center text-muted">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
         </div>
