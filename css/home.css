@@ -52,3 +52,8 @@ body{
 footer{
     background-color: hsl(216, 33%, 18%);
 }
+.nav-item{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
