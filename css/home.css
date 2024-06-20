@@ -18,17 +18,23 @@ body{
     background-position: top;
     background-size:cover;
     background-repeat: no-repeat;
-    border-radius: 20% 0 0 20%;
+    border-radius: 20% 0 20% 0;
 }
 
 .links{
     
         text-decoration: none;
         font-size: 16px;
-        margin-left:12px;
         margin-top: 12px ;
         color: hsl(216, 33%, 18%);
+        font-weight: 500;
+        margin-left: 15%;
+
      }
+
+     .links:hover{
+        color: yellow;
+    }
 
 .about p{
    margin: 3% 20%;
@@ -38,7 +44,7 @@ body{
 .galleryPhotos{
     text-align: center; 
     background-color:white;
-    border-radius: 10% 0 10% 20%;
+    border-radius: 20% 0 20% 0;
 }
 .formSection{
     background-color: hsl(215, 27%, 79%);

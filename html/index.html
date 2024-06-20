@@ -20,26 +20,27 @@
       <h1 class="heading" style="color: hsl(216, 33%, 18%)" ><span><i class="fa-solid fa-cat"></i></span> Welcome to CatAdopt</h1>
     </div> 
 
-    <nav class="d-flex align-items-around">
+    <nav class="d-flex justify-content-between" style="font-size: 20px;">
       <a class="links" href="#about">About </a>
-      <a class="links" href="#">Home</a>
-      <a class="links" href="../html/comments.html">Comments</a>
+      <a class="links" href="../html/comments.html" target="_blank">Comments</a>
     </nav>
 
   </section>
 
 <!-- About Section -->
-  <section class="about text-center" id="about">
+  <section class="about text-center p-2" id="about">
     <h1 class="heading pt-4">About CatAdopt <span><i class="fa-solid fa-cat"></i></span></h1>
     <div>
       <p>
         At CatAdopt, we're passionate about finding loving forever homes for cats in need. Our mission is to provide a platform where caring individuals can connect with potential adopters. Whether you're a family looking to welcome a new four-legged companion or a rescuer seeking homes for strays, CatAdopt is here to help. Our user-friendly website allows you to easily post photos and descriptions of the cats you're looking to rehome 
       </p>
     </div>
+
+    <a href="../html/comments.html" target="_blank" class="btn btn-success"> Read What People Say About Us</a>
   </section>
 
 <!-- Gallery Section -->
-  <section class="galleryPhotos mt-5">
+  <section class="galleryPhotos mt-5 py-4">
     <h1 class="text-center py-4" style="color: hsl(216, 33%, 18%)">Meet Our Cats</h1>
     <!-- The following select tag is empty because it is used as container for the elements created with JS -->
     <select id="selection">
@@ -49,7 +50,7 @@
     <div class="container d-flex justify-content-center">
       <div class="row gallery justify-content-center">
         <!-- The following div is empty tag because it is used as container for the elements created with JS  -->
-        <div class="col-4">
+        <div class="col-4 py-5">
         
         </div>
       </div>
@@ -74,7 +75,7 @@
   <!-- Scripts tags to implement js and boostrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  <script src="../js/app.js"></script>
+  <script src="../js/app.js" type="module"></script>
 
 </body>
 </html>

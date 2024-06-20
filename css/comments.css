@@ -45,7 +45,9 @@ body{
     font-size: 14px;
     
 }
-
+.info{
+    line-height: 0%;
+}
 
 .imagePhoto{
     height: 30px;
@@ -61,8 +63,6 @@ body{
     justify-content: space-around;
     max-width: 100%;
 }
-
-
 
 
 footer{
